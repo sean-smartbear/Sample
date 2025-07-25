@@ -18,5 +18,5 @@ steps:
       "x-api-key": "iRxB3w0g6n2uKUUajOK3T7oWa6KaqHVW6zEjVqDW"
      }     
     body: |
-     {}     
+     {"browser": "Chrome"}     
   enabled: true
