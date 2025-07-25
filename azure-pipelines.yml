@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+
+steps:
+- task: CdiscountAlm.rest-call-build-task.custom-build-task.restCallBuildTask@0
+  displayName: 'Rest call POST'
+  inputs:
+    webserviceEndpoint: 'Reflect Service Connection'
+    httpVerb: POST
+    headers: |
+     {
+      "x-api-key": "iRxB3w0g6n2uKUUajOK3T7oWa6KaqHVW6zEjVqDW"
+     }     
+    body: |
+     {}     
+  enabled: true
